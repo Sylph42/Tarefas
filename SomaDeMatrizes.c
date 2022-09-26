@@ -48,6 +48,6 @@ for ( linha=0; linha<tam; linha++){
       }
 printf("\n");
     }
-
+  printf("\n");
   }
 }
