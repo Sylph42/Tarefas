@@ -152,6 +152,7 @@ int main(int argc, char **argv)
   int o, v, s = 0, x = 0, Valor;
 
   string a = get_string("Qual ativo deseja procurar?\n");
+  printf("Obs.: Certifique-se de que seu ativo está presente em ambos os arquivos.\n"); 
 
 printf("Como você quer pesquisar no arquivo?\n");
 printf("1 - Valor | 2 - Ativo | 3 - Combinado \n");
@@ -293,7 +294,7 @@ scanf("%i", &o);
   Valor = (atoi(tokens[10]));
   if(Valor > v)
     {
-   fprintf(NovoArq, "|  %-10s | %-10s | %-10s ", tokens[1], instruments[2], instruments[10]);
+    fprintf(NovoArq, "|  %-10s | %-10s | %-10s ", tokens[1], instruments[2], instruments[10]);
     fprintf(NovoArq, "| %7s | %4s ", instruments[35], instruments[36]);
     fprintf(NovoArq, "| %9s | %9s | %9s |\n", tokens[9], tokens[10], tokens[11]);
     }
@@ -303,7 +304,7 @@ scanf("%i", &o);
  Valor = (atoi(tokens[11]));
   if(Valor > v)
     {
-   fprintf(NovoArq, "|  %-10s | %-10s | %-10s ", tokens[1], instruments[2], instruments[10]);
+    fprintf(NovoArq, "|  %-10s | %-10s | %-10s ", tokens[1], instruments[2], instruments[10]);
     fprintf(NovoArq, "| %7s | %4s ", instruments[35], instruments[36]);
     fprintf(NovoArq, "| %9s | %9s | %9s |\n", tokens[9], tokens[10], tokens[11]);
    }
@@ -396,7 +397,7 @@ scanf("%i", &o);
 
   if(strcmp(instruments[2], a) == 0)
     {
-   fprintf(NovoArq, "|  %-10s | %-10s | %-10s ", tokens[1], instruments[2], instruments[10]);
+    fprintf(NovoArq, "|  %-10s | %-10s | %-10s ", tokens[1], instruments[2], instruments[10]);
     fprintf(NovoArq, "| %7s | %4s ", instruments[35], instruments[36]);
     fprintf(NovoArq, "| %9s | %9s | %9s |\n", tokens[9], tokens[10], tokens[11]);
     }
@@ -415,7 +416,7 @@ scanf("%i", &o);
   scanf("%d", &x);
 
   printf("Qual valor mínimo deseja procurar?\n");
- scanf("%d", &v);
+  scanf("%d", &v);
 
  Texto();
     scanf("%i", &s);
@@ -562,7 +563,7 @@ scanf("%i", &o);
     Valor = (atoi(tokens[11]));
     if(Valor > v)
      {
-   fprintf(NovoArq, "|  %-10s | %-10s | %-10s ", tokens[1], instruments[2], instruments[10]);
+    fprintf(NovoArq, "|  %-10s | %-10s | %-10s ", tokens[1], instruments[2], instruments[10]);
     fprintf(NovoArq, "| %7s | %4s ", instruments[35], instruments[36]);
     fprintf(NovoArq, "| %9s | %9s | %9s |\n", tokens[9], tokens[10], tokens[11]);
     }
